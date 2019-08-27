@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: cornflowerblue;
+}
+
+.contenedor {
+    background-color: white;
+    margin: 200px auto 0 auto;
+    width: 70%;
+    padding: 25px;
+    border-radius: 10px;
+    font-family: 'Roboto';
+}
+
+#header {
+ display: flex;
+ justify-content: center;
+}
+
+#header > button {
+    border: 0;
+    color: white;
+    background-color: cornflowerblue;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.contenedor > h1 {
+    font-family: 'Righteous';
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    width: 100%;
+    display: flex;
+}
+
+td {
+    padding: 20px;
+  
+}
+
+.completado {
+    background-color: lightgreen;
+}
+
+span {
+    padding: 10px;
+    border-radius: 50%;
+}
+
+span:hover {
+    background-color: red;
+    color: white;
+}
+
+.exito {
+    background-color: green;
+    color: white;
+    animation: slide-up 0.7s ease;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.fallo {
+    background-color: red;
+    color: white;
+    animation: slide-up 0.7s ease;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
